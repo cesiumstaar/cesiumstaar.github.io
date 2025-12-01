@@ -1,11 +1,178 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>My Personal Site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan Katiyar | Portfolio</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; background: #f9fafb; color: #1f2937; }
+        header { background: #111827; color: white; padding: 50px 20px; text-align: center; }
+        h1 { font-size: 2.6rem; margin: 0; }
+        h2 { margin-top: 50px; color: #111827; text-transform: uppercase; letter-spacing: 1px; }
+        section { max-width: 900px; padding: 20px; margin: auto; }
+        .card { background: white; padding: 20px; border-radius: 8px; margin: 25px 0; 
+                box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+        ul { margin: 0; padding-left: 20px; }
+        a { color: #2563eb; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        footer { text-align: center; padding: 30px; font-size: 0.9rem; color: #555; }
+    </style>
 </head>
+
 <body>
-  <h1>Hello, I'm Aryan Katiyar</h1>
-  <p>Welcome to my personal website hosted on GitHub Pages. It's currently under maintenance :\( </p>
+
+<header>
+    <h1>Aryan Katiyar</h1>
+    <p>BTech CSE (Honors), IIT Bombay | Machine Intelligence & Data Science Minor</p>
+    <p>
+        <a href="mailto:aryankatiyar.atwork@gmail.com" style="color:#93c5fd;">Email</a> |
+        <a href="https://github.com/cesiumstaar" style="color:#93c5fd;">GitHub</a> |
+        <a href="https://www.linkedin.com/in/katiyaryan" style="color:#93c5fd;">LinkedIn</a> |
+        <a href="https://cesiumstaar.github.io" style="color:#93c5fd;">Website</a>
+    </p>
+</header>
+
+<section>
+
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+            I am a Computer Science and Engineering student at IIT Bombay with a strong academic record 
+            and deep interest in machine learning, quantitative research, graph learning, information retrieval, 
+            and formal methods. I have worked across high-frequency trading research, large-scale network 
+            fault prediction, active learning, knowledge-graph reasoning, adversarial robustness, DEX 
+            simulation, and probabilistic inference engines. I enjoy solving systems-level problems that combine 
+            mathematical structure with real-world performance constraints.
+        </p>
+    </div>
+
+    <h2>Education</h2>
+    <div class="card">
+        <h3>Indian Institute of Technology Bombay</h3>
+        <p>Bachelor of Technology in Computer Science and Engineering with Honors</p>
+        <p>GPA: 9.56/10</p>
+        <p>Minor in Machine Intelligence & Data Science</p>
+    </div>
+
+    <h2>Achievements</h2>
+    <div class="card">
+        <ul>
+            <li>Institute Academic Award – Top 25 of 1300+ students</li>
+            <li>AIR 111 in JEE Advanced (2022)</li>
+            <li>Quadeye Scholarship recipient</li>
+            <li>NTSE Scholar (AIR 2 in Stage 1)</li>
+            <li>KVPY Fellowship by Govt of India</li>
+            <li>Top 34 finalist, International Physics Olympiad Selection Camp</li>
+            <li>Bronze Medal, OPHO Invitational Round (16th place)</li>
+            <li>Silver Medal & Kaprekar Scholarship, Junior Maths Olympiad</li>
+        </ul>
+    </div>
+
+    <h2>Work Experience</h2>
+
+    <div class="card">
+        <h3>Graviton Research Capital LLP — Quantitative Research Intern</h3>
+        <p><i>May 2025 – Aug 2025</i></p>
+        <ul>
+            <li>Engineered microstructure features on NSE TBT data and built probabilistic models (LR, GBDT, SVMs) for classifying algorithmic vs retail activity.</li>
+            <li>Improved short-horizon sequence alpha by filtering retail noise and isolating HFT-driven signals.</li>
+            <li>Designed supervised anomaly-detection pipelines using one-class SVMs, CUSUM, and autoencoders for detecting insider/informed activity.</li>
+            <li>Received a full-time return offer as Quantitative Researcher.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Reliance Jio — Machine Learning Intern</h3>
+        <p><i>May 2024 – Oct 2024</i></p>
+        <ul>
+            <li>Unified device-specific failure models into transformer-based predictors.</li>
+            <li>Designed an OOD-driven model-selection pipeline for cross-device drifts.</li>
+            <li>Built production-ready predictors integrating syslogs, telemetry, and SNMP counters.</li>
+        </ul>
+    </div>
+
+    <h2>Research Experience</h2>
+    <div class="card">
+        <ul>
+            <li>LLM-augmented Knowledge Graph Reasoning — Literature review under Prof Soumen Chakrabarti.</li>
+            <li>Ablation Study on Symmetric Nonnegative Embeddings — Under Prof Abir De.</li>
+            <li>Human-Assisted Active Learning — Theoretical + algorithmic work on submodular maximization & Exp3 querying.</li>
+        </ul>
+    </div>
+
+    <h2>Selected Technical Projects</h2>
+
+    <div class="card">
+        <h3>Semantic Search & Hybrid Retrieval Systems</h3>
+        <ul>
+            <li>Built BM25, TF-IDF, BERT, and hybrid retrievers across HotpotQA, WikiCLIR, Quora.</li>
+            <li>Implemented diversity-aware ranking (MMR, ILP, LP relaxation).</li>
+            <li>Developed a DeepImpact-style retriever + BERT reranker pipeline.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Adversarial Attacks on Speech Recognition (Wav2Vec2, Whisper)</h3>
+        <ul>
+            <li>Targeted + robust CTC-based attacks with EOT.</li>
+            <li>Analyzed transferability, convergence, and black-box behavior.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Weighted MaxSAT via MILP</h3>
+        <ul>
+            <li>Optimized MaxSAT via Gurobi-backed MILP encodings with McCormick linearization.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Probabilistic Junction Tree Engine</h3>
+        <ul>
+            <li>Implemented triangulation, maximal-clique extraction, sum-product & max-product inference.</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>DEX Simulation & Arbitrage</h3>
+        <ul>
+            <li>Implemented Uniswap V2 AMM contracts in Solidity.</li>
+            <li>Built arbitrage simulation engines across multiple liquidity pools.</li>
+        </ul>
+    </div>
+
+    <h2>Leadership</h2>
+    <div class="card">
+        <ul>
+            <li>Department Academic Mentor (CSE)</li>
+            <li>Teaching Assistant: CS725, CS213, MA110, MA105</li>
+            <li>Mentor, Seasons of Code — Chess Engine project</li>
+            <li>Captain, IIT Bombay Football Team (2025–26)</li>
+        </ul>
+    </div>
+
+    <h2>Technical Skills</h2>
+    <div class="card">
+        <p><b>Programming:</b> C++, Python, C, Bash, Solidity, SQL, VHDL, MIPS, x86</p>
+        <p><b>ML Tools:</b> PyTorch, TensorFlow, Pandas, NumPy, SciPy</p>
+        <p><b>Software:</b> Git, LaTeX, MATLAB, AutoCAD</p>
+    </div>
+
+    <h2>Extracurricular</h2>
+    <div class="card">
+        <ul>
+            <li>Expert-rated Competitive Programmer (Codeforces)</li>
+            <li>Football: Inter-IIT Silver, MDFA player (2023–25)</li>
+            <li>Robotics: Arduino ESP32 obstacle-clearing bot (XLR8)</li>
+            <li>Winner, EnB Buzz business pitch (250+ teams)</li>
+        </ul>
+    </div>
+
+</section>
+
+<footer>
+    © 2025 Aryan Katiyar | Hosted on GitHub Pages
+</footer>
+
 </body>
 </html>
