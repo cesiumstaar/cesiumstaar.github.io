@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog posts and notes by Aryan Katiyar.">
+    <title>Blog | Aryan Katiyar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-shell nav-inner">
+            <a class="brand" href="index.html">Aryan Katiyar</a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-links" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a class="active" href="blog.html">Blog</a>
+                <a href="research.html">Research</a>
+                <a href="projects.html">Projects</a>
+                <a href="cv.html">CV</a>
+                <a href="https://github.com/cesiumstaar">GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-main site-shell">
+        <section class="page-banner" data-reveal>
+            <p class="eyebrow">Blog</p>
+            <h1>Notes on random things worth writing down</h1>
+            <p class="section-copy">
+                This section is meant for the more informal side of the site: essays, technical notes, short reflections,
+                reading notes, football thoughts, internship takeaways, or anything else that feels interesting enough
+                to keep.
+            </p>
+        </section>
+
+        <section class="blog-list" data-reveal>
+            <a class="post-card" href="posts/first-post.html">
+                <p class="post-meta">April 14, 2026 • Template Post</p>
+                <h2>Setting up this blog section</h2>
+                <p class="post-excerpt">
+                    A starter post that doubles as a reusable template for future entries. This gives you a clean path
+                    for publishing without changing the site structure again.
+                </p>
+            </a>
+        </section>
+
+        <section class="section-block" data-reveal>
+            <div class="section-heading">
+                <p class="eyebrow">Book Reviews</p>
+                <h2>Longer-form reading notes</h2>
+            </div>
+            <p class="section-copy">
+                A separate corner for books that are worth slowing down for. This can hold anything from technical books
+                and biographies to fiction that leaves a mark.
+            </p>
+            <div class="blog-list">
+                <a class="post-card" href="posts/book-review-the-man-who-solved-the-market.html">
+                    <p class="post-meta">April 14, 2026 • Book Review</p>
+                    <h2>The Man Who Solved the Market</h2>
+                    <p class="post-excerpt">
+                        A quick review of Gregory Zuckerman’s biography of Jim Simons: less a guide to trading than a
+                        study in how serious mathematical culture gets built around hard real-world signals.
+                    </p>
+                </a>
+            </div>
+        </section>
+
+        <section class="callout" data-reveal>
+            <h2>How to add posts later</h2>
+            <p>
+                Copy the existing post template in <span class="inline-code">posts/first-post.html</span>, change the
+                title and date, then add a new card to this page. If you want, I can later turn this into a proper
+                automatically indexed blog using Jekyll.
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-shell footer-inner">
+            <p>© 2026 Aryan Katiyar</p>
+            <p><a href="mailto:aryankatiyar.atwork@gmail.com">Write to me</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
